@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width initial-scale=1"><!-- Configura a largura da página 
+	de modo que se ajuste a do dispositivo -->
+	<meta name="description" content="Banco digital, especializado em serviços online."> <!-- Descrição -->
+	<meta name="keywords" content="Banco digital, remoto, online, Serviços ao cliente"> <!-- Palavras chave -->
+	<meta name="robots" content="index, follow"> <!-- Motores de busca - links -->
+	<meta name="author" content="Igor Gomes Oliveira Ramos">
+	<title>Banco Dos Is - BDIs</title>
+	<link rel="stylesheet" type="text/css" href="_css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet"><!-- Fonte externa -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"><!-- Adiciona botões, como importações, e os deixa prontos para utilização -->
+	<link rel="icon" href="_images/icon-bdis2.png">
+	</head>
+<body>
+<div id="interface">
+	<header class="cabecalho">
+		<a href="index.php"><h1 class="logo">Banco Dos Is</h1></a>
+
+		<button class="btn-menu"><i class="fa fa-bars fa-lg"><!-- Adiciona um botão, 
+		"fa-lg" aumenta o tamanho do botão. Obs: o botão é importado para o site 
+		através do link
+		--></i></button>
+		<nav class="menu">
+			<a class="btn-close"><i class="fa fa-times"></i></a>
+			<ul id="list-menu">
+									<li><a href="acess.php">Acessar</a></li>
+					<li><a href="criate.php">Criar</a></li>
+								<li><a href="index.php">Home</a></li>
+			</ul>
+		</nav>
+		<!-- JQuery -->
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script><!-- Faz a importação de código
+		Javascript para o menu -->
+	<script>
+		$(".btn-menu").click(function() {
+			$(".menu").show(); // Exibe o menu quando o botão for acionado
+		});
+		$(".btn-close").click(function() {
+			$(".menu").hide(); // Oculta o menu
+		});
+	</script>
+	</header>
+	<!-- Banner da página -->
+	<div class="banner">
+		<div class="title">
+			<h2>ADQUIRA O QUE VOCÊ PRECISA!</h2>			<h3><a href="criate.php">Crie</a> sua conta ou <a href="acess.php">acesse-a</a>!</h3>		</div>
+				<div class="buttons">
+			<a href="criate.php"><button class="btn-criar">Criar<i class="fa fa-arrow-circle-right">
+			</i></button></a>
+			<a href="acess.php"><button class="btn-acessar">Acessar<i class="fa fa-question-circle">
+			</i></button></a>
+		</div>
+			</div>
+	<div id="corpo">
+	<!-- Barra de opções -->
+	<div id="opt_usuario">
+		</div>	<section id="corpo">
+		<p>O Banco Dos Is (BDIs) é altamente recomendado a qualquer pessoa que esteja a
+		procura de um local seguro para <a href="acess.php">armazenar</a> seu dinheiro,
+		<a href="acess.php">sacar</a> e ter fácil acesso a <a href="acess.php">informações da
+		conta</a>. Além disso, você pode fechar a conta quando quiser, para mais informações
+		<a href="acess.php">clique aqui</a> e entre em sua conta.</p>
+		<figure id="bp">
+		<img src="_images/enc_icon.png" alt="Banco protegido">
+		<figcaption><a href="http://www.freeiconspng.com/img/15200">Imagem ilustrativa,
+		clique para a fonte.</a></figcaption>
+		</figure>
+	</section>
+	<aside id="lateral">
+		<p><a href="criate.php">Crie</a> sua conta hoje mesmo, ou <a href="acess.php">acesse</a>
+		ela agora mesmo!</p>
+	</aside>
+</div>
+<footer class="rodape">
+	<div class="social-icons">
+		<a href="https://goo.gl/yaFkJe"><i class="fa fa-facebook"></i></a>
+		<a href="https://github.com/ig-oramos/bdis"><i class="fa fa-github"></i></a>
+		<a href="https://linkedin.com/in/igor-g-o-ramos-4637b1178"><i class="fa fa-linkedin"></i></a>
+	</div>
+	<p class="copyright">Copyright &copy; 2018 - 2022	 by Igor G. O. Ramos</p>
+</footer>
+</div>
+</body>
+</html>
